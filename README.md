@@ -153,7 +153,7 @@ Most rejections come from the same few slips:
 - **The session started too early.** The agent session that built the code must start after the bounty opened. Starting from an old chat, or reusing a session from another bounty, fails the check.
 - **The code was pasted in, not written by the agent.** The transcripts have to match the files. Code copied in from elsewhere, or written by hand and committed without the agent touching it, does not count as your agent's work.
 - **The repo is private, or the commit is missing.** The entry points at one public commit. A private repo, an unpushed commit, or a short hash the grader cannot resolve all fail.
-- **No license.** Entries need an OSI-approved license in the repo.
+- **No license.** Entries need an OSI-approved license file at the root of the repo (a `LICENSE` carrying an SPDX id such as MIT or Apache-2.0). A guide with no license file is refused before anything else is checked, even if the guide itself is fine.
 - **The bundle is missing its run record.** If `bundle` refuses to write, read what it asks for — usually the system prompt or the effort level — and pass the flag it names instead of submitting without it.
 
 ## 7. Collect your prize
